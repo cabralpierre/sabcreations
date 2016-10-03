@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Responsive Ecommerce with Twitter Bootstrap2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/style_common.css" />
+	<link rel="stylesheet" type="text/css" href="css/style1.css" />		
+	<link rel="stylesheet" type="text/css" media="screen" href="css/cloud-zoom.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/app.js"></script>
+
+	<script type="text/javascript" src="js/cloud-zoom.1.0.2.min.js"></script>	
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "ur-f45484e-a822-bd38-8fdf-dbba9efff099"}); </script>		
+</head>
+<body>
+
+
+
+	<div id="header">
+		<div class="container" id="header_upper">
+			<div class="row">
+				<span class="span4" id="logo">
+					<a href="index.html" style="font-size:36px">Your Logo is Here</a>
+				</span>
+				<span class="pull-right" id="header_cart">
+					<ul>
+						<li>
+							<form >
+								<input type="text" placeholder="Search" class="input-small">
+							</form>
+						</li>
+											<li><a href="#">Login</a></li>
+											<li><a href="#">Signup</a></li>
+						<li style="float:right">
+							<a href="#" id="header_cart_link">(1)</a>
+						</li>
+
+					</ul>
+				</span>
+			</div>
+		</div>
+
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<div class="nav-collapse">
+							<ul class="nav" id="header_menu">
+								<li class="active"><a href="catalog.html">Shoes</a>
+									<div class="hidden-desktop hidden-tablet visible-phone">
+										<div class="container"  >
+											<select>
+												<option>Snikers</option>
+												<option>Sport</option>
+											</select>
+										</div>	
+									</div></li>
+								<li><a href="catalog.html">Bags</a></li>
+								<li><a href="catalog.html">Clothes</a></li>
+								<li><a href="catalog.html">Accessories</a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="subnav visible-desktop visible-tablet hidden-phone">
+			<div class="container"  id="scrollable" data-spy="scroll">
+
+				<ul class="nav">
+					<li class="active"><a href="#abiti">Snikers</a></li>
+					<li><a href="#cappelli">Sport</a></li>
+				</ul>
+			</div>	
+		</div>
+
+	</div>
+
+
+		<div id="content" class="container"  data-spy="scroll">
+			
+		<div class="row">
+
+			<span class="span8" id="product_main">
+
+				<div class="product_intro row" >
+					<h2 class="span8">Marc by marc jacobs</h2>
+					<p class="span8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>			
+				</div>
+				
+				<div class="visible-desktop visible-tablet hidden-phone">
+				<ul class="thumbnails row">
+					<li class="span6">
+						<a href="http://lorempixel.com/1200/800/fashion/6/Laboop%20Ecommerce/" class='thumbnail cloud-zoom' id='zoom1' rel="adjustX: 36, adjustY:0">
+							<img src="http://lorempixel.com/1200/800/fashion/6/Laboop%20Ecommerce/" alt="">
+						</a>
+					</li>
+					<li class="span2">
+						<a href="#" class="thumbnail">
+							<img src="http://lorempixel.com/1000/600/fashion/Laboop%20Ecommerce/" alt="">
+						</a>
+					</li>
+					<li class="span2">
+						<a href="#" class="thumbnail">
+							<img src="http://lorempixel.com/1000/600/fashion/Laboop%20Ecommerce/" alt="">
+						</a>
+					</li>
+					<li class="span2">
+						<a href="#" class="thumbnail">
+							<img src="http://lorempixel.com/1000/600/fashion/Laboop%20Ecommerce/" alt="">
+						</a>
+					</li>
+				</ul>	
+				</div>
+				<div class="visible-iphone hidden-desktop hidden-tablet">
+				<ul class="thumbnails row">
+					<li class="span6">
+						<a href="http://lorempixel.com/1200/800/fashion/6/Laboop%20Ecommerce/" class='thumbnail cloud-zoom'  rel="adjustX: 36, adjustY:0">
+							<img src="http://lorempixel.com/1200/800/fashion/6/Laboop%20Ecommerce/" alt="">
+						</a>
+					</li>
+				</ul>	
+				</div>
+			</span>
+
+			<span class="span3 offset1" id="product_side">
+				<form>
+					<h3>Sizes</h3>
+					<select>
+						<option>S</option>
+						<option>M</option>
+					</select>
+					<h3>Colors</h3>		
+					<ul class="unstyled" id="product_colors">
+						<li><span></span></li>
+						<li><span></span></li>
+						<li><span></span></li>
+					</ul>		
+					<button type="submit" class="btn btn_large">Add to bag</button>
+				</form>
+				<div id="pruduct_share">
+					<span class='st_sharethis_large' displayText='ShareThis'></span>
+					<span class='st_facebook_large' displayText='Facebook'></span>
+					<span class='st_twitter_large' displayText='Tweet'></span>
+					<span class='st_pinterest_large' displayText='Pinterest'></span>
+					<span class='st_email_large' displayText='Email'></span>
+				</div>
+
+
+			</span>
+
+
+		</div>
+
+		<div id="related">
+		
+			<h3>Related products:</h3>
+
+			<ul class="row thumbnails" >
+
+			    <li class="span2">
+			    	<a class="thumbnail" href="#">
+			    		<img alt="" src="http://lorempixel.com/1000/600/fashion/Laboop%20Ecommerce/">
+			    	</a>
+			    </li>
+			    <li class="span2">
+			    	<a class="thumbnail" href="#">
+			    		<img alt="" src="http://lorempixel.com/1000/600/fashion/Laboop%20Ecommerce/">
+			    	</a>
+			    </li>
+			    <li class="span2">
+			    	<a class="thumbnail" href="#">
+			    		<img alt="" src="http://lorempixel.com/1000/600/fashion/Laboop%20Ecommerce/">
+			    	</a>
+			    </li>
+			</ul>
+		</div>
+
+				</div>
+
+				<div class="push"></div>
+
+
+
+
+			<div id="footer">
+				<div class="container">		
+					<div class="row">
+						<span class="span10" id="footer_links">
+							<ul class="unstyled">
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Advertising</a></li>
+								<li><a href="#">Affiliates</a></li>
+								<li><a href="#">Fashion news</a></li>
+							</ul>
+						</span>
+						<span class="span2 pull-right" id="footer_social">
+							<ul class="unstyled">
+								<li><a href="#"><img src="img/facebook.png"></a></li>
+								<li><a href="#"><img src="img/twitter.png"></a></li>
+							</ul>
+						</span>
+					</div>
+				</div>
+			</div>
+		</body>
+		</html>
